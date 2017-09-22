@@ -41,8 +41,10 @@ except AttributeError:
 filepath = sys.argv[1] 
 
 # get granule time
+filepath_time_fmt_str = "%y%j%H%M"
+
 dstr = filepath.split("/")[-1][22:31]
-observe_time = datetime.datetime.strptime(dstr, "%y%j%H%M")
+observe_time = datetime.datetime.strptime(dstr, filepath_time_fmt_str)
 
 #datetime.datetime(2017, 9, 14, 18, 35)
 
