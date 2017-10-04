@@ -9,9 +9,12 @@
 levelstr=$1
 nameselector=$2
 
+datadir=/srv/imars-data/ipopp-common/pub
+#datadir=/thing1/ipopp-nrt/pub
+
 #echo "finding $nameselector @ $levelstr"
 
-data_subdirs="/thing1/ipopp-nrt/pub/gsfcdata /thing1/ipopp-nrt/pub/data"
+data_subdirs="$datadir/gsfcdata $datadir/data"
 
 l0_dirs=`find $data_subdirs -maxdepth 3 -name $levelstr -type d`
 
