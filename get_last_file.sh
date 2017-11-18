@@ -9,7 +9,8 @@
 levelstr=$1
 nameselector=$2
 
-datadir=/srv/imars-data/ipopp-common/pub
+datadir=/mnt/ipopp-nrt/pub
+#datadir=/srv/imars-data/ipopp-common/pub
 #datadir=/thing1/ipopp-nrt/pub
 
 #echo "finding $nameselector @ $levelstr"
